@@ -40,3 +40,27 @@ function getName(animal) {
   return animal && animal.name;
 }
 console.log(getName(dog));
+
+function getSound(ani) {
+  const tasks = {
+    개: () => {
+      console.log("멍멍!");
+    },
+    고양이: () => {
+      console.log("냥!~~~~");
+    },
+    비둘기: () => {
+      console.log("구 구구 구! 구구구구구구국구");
+    }
+  };
+  const task = tasks[ani];
+  if (!task) {
+    console.log("....?");
+    return;
+  }
+  task();
+}
+
+getSound("개");
+getSound("고양이");
+getSound("인간");
