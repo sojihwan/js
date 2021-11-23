@@ -59,7 +59,7 @@ function sum(...rest) {
   return rest.reduce((acc, curr) => acc + curr, 0);
 }
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-console.log(...numbers);
+console.log(sum(...numbers));
 
 function max(...ret) {
   const a = ret.reduce((acc, curr) => {
