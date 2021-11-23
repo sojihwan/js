@@ -58,5 +58,18 @@ console.log(s === cs);
 function sum(...rest) {
   return rest.reduce((acc, curr) => acc + curr, 0);
 }
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(...numbers);
 
-console.log(sum(1, 2, 2, 3, 4, 5, 5, 6, 7, 8));
+function max(...ret) {
+  const a = ret.reduce((acc, curr) => {
+    if (acc < curr) {
+      acc = curr;
+    }
+    return acc;
+  }, 0);
+  return a;
+}
+
+const result = max(1, 2, 3, 4, 10, 5, 6, 7);
+console.log(result);
