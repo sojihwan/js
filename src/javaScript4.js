@@ -73,3 +73,11 @@ function max(...ret) {
 
 const result = max(1, 2, 3, 4, 10, 5, 6, 7);
 console.log(result);
+// 글로벌 스코프 전역 변수 같은거
+//나머지 스코프는 지역변수
+//var로 하면 overdrive가 안 됨
+
+//호이스팅 왠만하면 피하기
+//유지보수 어려움
+//호출과 선언이 반대과 되는것
+//babelrc에서 내용 다 지우면 막을수 있음
