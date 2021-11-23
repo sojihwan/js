@@ -55,3 +55,8 @@ console.log(s === cs);
 //...연산자 같은 거는 overdrive 그리고 복사 하여 원래의 const는 건들 지 않음
 // {칼럼,...(래스트 변수명)} 그 칼럼을 제외하고 복사
 //배열에서의 래스트는 맨 마지막에 와야함
+function sum(...rest) {
+  return rest.reduce((acc, curr) => acc + curr, 0);
+}
+
+console.log(sum(1, 2, 2, 3, 4, 5, 5, 6, 7, 8));
